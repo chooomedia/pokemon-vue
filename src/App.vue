@@ -1,28 +1,32 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Pokemon />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { shallowMount } from '@vue/test-utils'
+import Pokemon from './components/Pokemon.vue'
+
+// helper function that mounts and returns the rendered component
+function getMountedComponent(Component, propsData) {
+  return shallowMount(Component, {
+    propsData
+  })
+}
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    Pokemon
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
 </style>
