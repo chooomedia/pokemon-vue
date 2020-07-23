@@ -1,4 +1,4 @@
-# pokemon-vue
+# Pokèdex Vue Trial work task for ebcont.com
 
 ## Project setup
 ```
@@ -15,9 +15,9 @@ npm run serve
 npm run build
 ```
 
-### Run your unit tests
+### Run your tests
 ```
-npm run test:unit
+npm run test
 ```
 
 ### Lints and fixes files
@@ -25,5 +25,6 @@ npm run test:unit
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## License
+
+[MIT](LICENSE)
